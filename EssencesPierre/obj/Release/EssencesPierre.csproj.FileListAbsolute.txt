@@ -1,0 +1,9 @@
+C:\Users\Robin\Documents\GitHub\EssencesPierre\EssencesPierre\bin\Release\EssencesPierre.exe.config
+C:\Users\Robin\Documents\GitHub\EssencesPierre\EssencesPierre\bin\Release\EssencesPierre.exe
+C:\Users\Robin\Documents\GitHub\EssencesPierre\EssencesPierre\bin\Release\EssencesPierre.pdb
+C:\Users\Robin\Documents\GitHub\EssencesPierre\EssencesPierre\obj\Release\EssencesPierre.Form1.resources
+C:\Users\Robin\Documents\GitHub\EssencesPierre\EssencesPierre\obj\Release\EssencesPierre.Properties.Resources.resources
+C:\Users\Robin\Documents\GitHub\EssencesPierre\EssencesPierre\obj\Release\EssencesPierre.csproj.GenerateResource.cache
+C:\Users\Robin\Documents\GitHub\EssencesPierre\EssencesPierre\obj\Release\EssencesPierre.csproj.CoreCompileInputs.cache
+C:\Users\Robin\Documents\GitHub\EssencesPierre\EssencesPierre\obj\Release\EssencesPierre.exe
+C:\Users\Robin\Documents\GitHub\EssencesPierre\EssencesPierre\obj\Release\EssencesPierre.pdb
