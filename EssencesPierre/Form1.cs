@@ -41,7 +41,17 @@ namespace EssencesPierre
 
         private void refresh_Click(object sender, EventArgs e)
         {
-            changeImage();
+            if (textBox1.Text == imageName)
+            {
+                textBox1.BackColor = DefaultBackColor;
+                textBox1.Clear();
+                changeImage();
+            }
+            else
+            {
+                textBox1.BackColor = Color.Red;
+            }
+
         }
 
         private void changeImage()
@@ -50,6 +60,10 @@ namespace EssencesPierre
             string img = list[i];
 
             afficherImage(img);
+
+            imageName = img.Replace(pathDirectoryImg, "");
+            imageName = imageName.Split('.')[0];
+            Console.WriteLine(imageName);
         }
 
         private void afficherImage(string pathImg)
@@ -61,6 +75,5 @@ namespace EssencesPierre
         {
 
         }
-
     }
 }

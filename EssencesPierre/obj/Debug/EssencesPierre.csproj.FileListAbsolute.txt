@@ -8,3 +8,13 @@ C:\Users\Robin\Documents\GitHub\EssencesPierre\EssencesPierre\obj\Debug\Essences
 C:\Users\Robin\Documents\GitHub\EssencesPierre\EssencesPierre\obj\Debug\EssencesPierre.csproj.CoreCompileInputs.cache
 C:\Users\Robin\Documents\GitHub\EssencesPierre\EssencesPierre\obj\Debug\EssencesPierre.exe
 C:\Users\Robin\Documents\GitHub\EssencesPierre\EssencesPierre\obj\Debug\EssencesPierre.pdb
+C:\Users\Robin\Documents\GitHub\wood_species\EssencesPierre\bin\Debug\EssencesPierre.exe.config
+C:\Users\Robin\Documents\GitHub\wood_species\EssencesPierre\bin\Debug\EssencesPierre.exe
+C:\Users\Robin\Documents\GitHub\wood_species\EssencesPierre\bin\Debug\EssencesPierre.pdb
+C:\Users\Robin\Documents\GitHub\wood_species\EssencesPierre\obj\Debug\EssencesPierre.csprojResolveAssemblyReference.cache
+C:\Users\Robin\Documents\GitHub\wood_species\EssencesPierre\obj\Debug\EssencesPierre.Form1.resources
+C:\Users\Robin\Documents\GitHub\wood_species\EssencesPierre\obj\Debug\EssencesPierre.Properties.Resources.resources
+C:\Users\Robin\Documents\GitHub\wood_species\EssencesPierre\obj\Debug\EssencesPierre.csproj.GenerateResource.Cache
+C:\Users\Robin\Documents\GitHub\wood_species\EssencesPierre\obj\Debug\EssencesPierre.csproj.CoreCompileInputs.cache
+C:\Users\Robin\Documents\GitHub\wood_species\EssencesPierre\obj\Debug\EssencesPierre.exe
+C:\Users\Robin\Documents\GitHub\wood_species\EssencesPierre\obj\Debug\EssencesPierre.pdb
