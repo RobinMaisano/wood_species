@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
@@ -16,21 +12,26 @@ namespace EssencesPierre
 
         string pathDirectoryImg = @".\img\";
         string imageName;
-        string[] list;
+        List<string> list;
+        List<string> storageList;
         Random random = new Random();
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Essences de bois";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("wood-icon.ico")));
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             try
             {
-                list = Directory.GetFiles(pathDirectoryImg);
+                list = Directory.GetFiles(pathDirectoryImg).ToList<string>();
+                storageList = new List<String>(list);
 
-                changeImage();
+                ChangeImage();
             }
             catch (Exception)
             {
@@ -39,41 +40,46 @@ namespace EssencesPierre
             }
         }
 
-        private void refresh_Click(object sender, EventArgs e)
+        private void Refresh_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == imageName)
             {
-                textBox1.BackColor = DefaultBackColor;
+                textBox1.BackColor = SystemColors.Window;
                 textBox1.Clear();
-                changeImage();
+                ChangeImage();
             }
             else
             {
                 textBox1.BackColor = Color.Red;
             }
-
         }
 
-        private void changeImage()
+        private void ChangeImage()
         {
-            int i = random.Next(list.Length);
+            if (list.Count == 0)
+            {
+                list = new List<string>(storageList);
+                MessageBox.Show("On recommence !");
+            }
+
+            int i = random.Next(list.Count);
             string img = list[i];
 
-            afficherImage(img);
+            list.RemoveAt(i);
+            AfficherImage(img);
 
-            imageName = img.Replace(pathDirectoryImg, "");
-            imageName = imageName.Split('.')[0];
-            Console.WriteLine(imageName);
+            imageName = img.Replace(pathDirectoryImg, "").Split('.')[0].ToLower();
+            //Console.WriteLine(imageName);
         }
 
-        private void afficherImage(string pathImg)
+        private void AfficherImage(string pathImg)
         {
             pictureBox1.Image = new Bitmap(pathImg);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
         {
-
+            textBox1.BackColor = SystemColors.Window;
         }
     }
 }
